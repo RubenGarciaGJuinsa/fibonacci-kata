@@ -29,6 +29,7 @@ class FibonacciTest extends TestCase
             [1, 0],
             [2, 1],
             [3, 1],
+            [4, 2],
         ];
     }
 }
