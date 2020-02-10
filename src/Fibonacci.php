@@ -9,8 +9,20 @@ class Fibonacci
     {
         if ($input == 1) {
             return 0;
-        } else {
-            return 1;
         }
+
+        $result = 1;
+
+        $prevValue = 1;
+        $prevPrevValue = 0;
+
+        for ($i = 3; $i <= $input; $i++) {
+            $result = $prevValue + $prevPrevValue;
+
+            $prevPrevValue = $prevValue;
+            $prevValue = $result;
+        }
+
+        return $result;
     }
 }
