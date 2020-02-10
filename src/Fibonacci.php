@@ -7,6 +7,10 @@ class Fibonacci
 
     public function getValueByIndex($input)
     {
-        return 0;
+        if ($input == 1) {
+            return 0;
+        } else {
+            return 1;
+        }
     }
 }
