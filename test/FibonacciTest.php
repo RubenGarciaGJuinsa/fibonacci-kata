@@ -26,7 +26,8 @@ class FibonacciTest extends TestCase
     public function PositionAndResultDataProvider()
     {
         return [
-            [1, 0]
+            [1, 0],
+            [2, 1],
         ];
     }
 }
